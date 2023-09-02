@@ -97,7 +97,7 @@ function time_convert(value){
         const remainder_min = value % 60;
         const get_hr = get_min /60;
         const remainder_hr = get_min % 60
-        const result = Math.floor(get_hr) + ' hr ' + Math.floor(remainder_hr) +' min ago'
+        const result = Math.floor(get_hr) + 'hrs ' + Math.floor(remainder_hr) +' min ago'
         return result
         
     }
