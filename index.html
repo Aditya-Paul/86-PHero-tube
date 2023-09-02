@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PHero Tube</title>
+    <!-- Daisy UI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.6.4/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header class="container mx-auto">
+        <!-- Nav bar -->
+        <div class="navbar bg-base-100">
+            <div class="navbar-start">
+              <img src="./Logo.png" alt="">
+            </div>
+            <div class="navbar-center bg-[#25252533] rounded-xl">
+                <button onclick="gosort()" class="btn btn-ghost text-lg font-medium text-black ">Sort by view</button>
+            </div>
+            <div class="navbar-end ">
+              <button onclick="goBlog()" class="btn btn-ghost text-white text-lg font-medium bg-[#FF1F3D]">Blog</button>
+            </div>
+          </div>
+    </header>
+
+    <main>
+        <!-- for display category option-->
+        <section>
+          <div id="category_holder" class="flex items-center justify-center mt-12 gap-4">
+
+          </div>
+        </section>
+
+        <!-- Category display -->
+        <section>
+          <div id="display_card_holder" class=" justify-center grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+            
+
+          </div>
+          
+          <div id="no_card_holder" class="">
+            
+
+          </div>
+        </section>
+    </main>
+    
+    
+<script src="./index.js"></script>
+</body>
+</html>
